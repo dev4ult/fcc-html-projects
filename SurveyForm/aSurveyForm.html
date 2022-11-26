@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Survey Form</title>
+    <link rel="stylesheet" href="aSurveyForm.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <h1 id="title">Pingueon Beta Registration Form</h1>
+        <p id="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veritatis, cum illum eum, saepe vero, porro laboriosam molestias expedita dolorem iusto accusantium repudiandae assumenda itaque! Accusantium in quasi magni
+          reprehenderit.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">
+            Name
+            <br />
+            <input id="name" type="text" name="name" placeholder="Enter your Name" required />
+          </label>
+        </div>
+        <hr />
+        <div>
+          <label id="email-label" for="email">
+            Email
+            <br />
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required />
+          </label>
+        </div>
+        <hr />
+        <div>
+          <label id="number-label" for="number">
+            Age <span>(optional)</span>
+            <br />
+            <input id="number" type="number" name="age" placeholder="Enter your Age" min="9" max="90" />
+          </label>
+        </div>
+        <hr />
+        <div>
+          Gender
+          <br />
+          <select id="dropdown" name="gender" required>
+            <option disabled selected value>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <hr />
+        <div>
+          What kind of games did you play?
+          <label for="FPS">
+            <input id="FPS" type="checkbox" value="FPS" />
+            First Person Shooter
+          </label>
+          <label for="RPG">
+            <input type="checkbox" name="RPG" id="RPG" value="RPG" />
+            Role-playing Games
+          </label>
+          <label for="sandbox">
+            <input type="checkbox" name="sandbox" id="sandbox" value="sandbox" />
+            Sandbox
+          </label>
+          <label for="RTS">
+            <input type="checkbox" name="RTS" id="RTS" value="RTS" />
+            Real-time Strategy
+          </label>
+          <label for="puzzle">
+            <input type="checkbox" name="puzzle" id="puzzle" value="puzzle" />
+            Puzzle
+          </label>
+          <label for="action-adv">
+            <input type="checkbox" name="action-adv" id="action-adv" value="action-adv" />
+            Action-Adventure
+          </label>
+        </div>
+        <hr />
+        <div>
+          How often do you play games in a day?
+          <label for="1hour">
+            <input type="radio" name="playingTime" id="1hour" checked value="1hour" />
+            Less than 1 Hour
+          </label>
+          <label for="2-3hour">
+            <input type="radio" name="playingTime" id="2-3hour" value="2-3hour" />
+            2 - 3 Hours
+          </label>
+          <label for="4-5hour">
+            <input type="radio" name="playingTime" id="3-5hour" value="4-5hour" />
+            3 - 5 Hours
+          </label>
+          <label for="6-12hour">
+            <input type="radio" name="playingTime" id="6-12hour" value="6-12hour" />
+            6 - 12 Hours
+          </label>
+        </div>
+        <hr />
+        <div>
+          <label for="comment">
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </label>
+        </div>
+        <hr />
+        <div>
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

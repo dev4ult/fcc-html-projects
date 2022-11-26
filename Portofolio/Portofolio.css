@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+body {
+  font-family: 'Supermercado One', cursive;
+  background-color: #54c2cc;
+}
+
+header {
+  background-color: #20525c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ececec;
+  letter-spacing: 5px;
+  z-index: 1;
+}
+
+@media (max-width: 460px) {
+  header {
+    display: none;
+  }
+}
+
+#navbar,
+ul,
+#profile {
+  display: flex;
+}
+
+#navbar {
+  justify-content: space-between;
+}
+
+#profile-pic,
+#profile-name {
+  margin-left: 20px;
+}
+
+.header {
+  padding: 5px;
+}
+
+#profile-pic {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 5px;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(202, 202, 202);
+}
+
+.nav-link:hover {
+  color: #dfe667;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  /* background-color: tomato; */
+  width: 75%;
+  margin: auto;
+  padding: 40px;
+  color: #213052;
+  border-radius: 2%;
+}
+
+@media (max-width: 460px) {
+  main {
+    padding: 0;
+  }
+}
+
+#welcome-section {
+  position: relative;
+  top: 0;
+}
+
+#welcome-section,
+#projects,
+#socmed,
+#link {
+  margin-bottom: 60px;
+}
+
+#about-title,
+#projects-title,
+#socmed-title,
+#link-title {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+  #about-title,
+  #projects-title,
+  #socmed-title,
+  #link-title {
+    font-size: 10px;
+  }
+}
+
+#about-description {
+  /* background-color: red; */
+  width: 50%;
+  text-align: justify;
+  font-size: 25px;
+}
+
+@media (max-width: 460px) {
+  #about-description {
+    font-size: 7px;
+  }
+}
+
+#projects-title {
+  width: fit-content;
+  right: 0;
+  /* background-color: red; */
+}
+
+#projects-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.project-tile {
+  font-size: 30px;
+}
+
+.socmed-link {
+  text-decoration: none;
+  font-size: 40px;
+  color: #213502;
+}
+
+.socmed-link:hover {
+  color: #dfe667;
+  transition: 0.5s ease;
+}
